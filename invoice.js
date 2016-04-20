@@ -2,12 +2,12 @@ angular.module('invoice1', [])
 .controller('InvoiceController', function() {
   this.qty = 1;
   this.cost = 2;
-  this.inCurr = 'EUR';
-  this.currencies = ['USD', 'EUR', 'CNY'];
+  this.inCurr = 'USD';
+  this.currencies = ['USD', 'NEP', 'IND'];
   this.usdToForeignRates = {
     USD: 1,
-    EUR: 0.74,
-    CNY: 0.69
+    NEP: 105.94,
+    IND: 66.17
   };
   
   this.total = function total(outCurr) {
